@@ -161,7 +161,7 @@ function createTaskCard(task: Task): HTMLElement {
         return;
       }
       task.repeat = true;
-      task.repeatInterval = interval;
+      task.repeatInterval = interval as TaskRepeatType;
       saveBoard(boardData);
       renderBoard();
     }
